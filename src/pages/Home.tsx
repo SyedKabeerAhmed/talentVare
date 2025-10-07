@@ -265,11 +265,13 @@ const Home: React.FC = () => {
                 className="job-search-input"
               />
               <div className="search-separator"></div>
-              <select className="location-select">
+              <label htmlFor="location-select" className="sr-only">Select Location</label>
+              <select id="location-select" className="location-select" aria-label="Select Location">
                 <option>Select Location</option>
               </select>
               <div className="search-separator"></div>
-              <select className="job-type-select">
+              <label htmlFor="job-type-select" className="sr-only">Job Type</label>
+              <select id="job-type-select" className="job-type-select" aria-label="Job Type">
                 <option>Job Type</option>
               </select>
               <button className="search-btn ">

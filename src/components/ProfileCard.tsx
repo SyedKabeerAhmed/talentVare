@@ -2,6 +2,7 @@ import React from 'react';
 import './ProfileCard.css';
 import { FaChevronDown } from 'react-icons/fa';
 import profileImage from '../assets/Oval.png';
+import cardBackgroundImage from '../assets/Rectangle 18369.png';
 
 const ProfileCard: React.FC = () => {
   const stats = [
@@ -13,7 +14,15 @@ const ProfileCard: React.FC = () => {
   return (
     <div className="profile-card-container">
       <div className='Card'>
-        <div className='Card-img'></div>
+        <div className='Card-img'>
+          <img 
+            src={cardBackgroundImage} 
+            alt="Profile card background" 
+            className="card-background-img"
+            fetchPriority="high"
+            loading="eager"
+          />
+        </div>
         <div className='sub-card'>
           <img 
             src={profileImage} 

@@ -35,8 +35,9 @@
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 39px;
+  object-fit: contain;
 }
 
 /* Navigation Links */
@@ -228,8 +229,9 @@
 }
 
 .mobile-logo {
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 34px;
+  object-fit: contain;
 }
 
 .close-menu {

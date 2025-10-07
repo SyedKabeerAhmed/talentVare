@@ -59,7 +59,12 @@ const Menu: React.FC = () => {
           </div>
         </div>
 
-        <button className="hamburger-menu" onClick={toggleMobileMenu}>
+        <button 
+          className="hamburger-menu" 
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+          aria-expanded={isMobileMenuOpen}
+        >
           <span className={`hamburger-line ${isMobileMenuOpen ? 'active' : ''}`}></span>
           <span className={`hamburger-line ${isMobileMenuOpen ? 'active' : ''}`}></span>
           <span className={`hamburger-line ${isMobileMenuOpen ? 'active' : ''}`}></span>

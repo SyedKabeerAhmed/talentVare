@@ -9,12 +9,17 @@
     <!-- Font optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
     
     <!-- Neue Haas Grotesk Display Pro Font -->
     <link rel="preconnect" href="https://fonts.adobe.com">
     <link rel="preconnect" href="https://use.typekit.net">
-    <link rel="stylesheet" href="https://use.typekit.net/neue-haas-grotesk.css">
+    <link rel="stylesheet" href="https://use.typekit.net/neue-haas-grotesk.css" media="print" onload="this.media='all'">
+    <noscript><link href="https://use.typekit.net/neue-haas-grotesk.css" rel="stylesheet"></noscript>
+    
+    <!-- Preload LCP image -->
+    <link rel="preload" as="image" href="/src/assets/Rectangle 18369.png" fetchpriority="high">
   </head>
   <body>
     <div id="root"></div>
