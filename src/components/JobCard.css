@@ -1,0 +1,310 @@
+/* JobCard Component Styles - Exact Match */
+.job-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 180px;
+  height: 157px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  border: 1px solid #f1f5f9;
+}
+.promoted{
+      font-size: 10px;
+    font-weight: 600;
+}
+
+.job-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Job Card Header */
+.job-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 0;
+}
+
+.company-logo {
+ width: 31px;
+    height: 32.4px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+.color{
+  color: #0154AA;
+}
+.job-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.job-title {
+  font-size: 13px;
+  font-weight: 200;
+  color: #1e293b;
+  margin: 0 0 2px 0;
+  line-height: 1.1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.company-name {
+  font-size: 11px;
+  color: #64748b;
+  margin: 0;
+  font-weight: 100;
+}
+
+/* Job Card Details */
+.job-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+ 
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.detail-icon {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(150%);
+  opacity: 0.7;
+}
+
+/* Job Card Actions */
+.job-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+  gap: 8px;
+}
+
+.apply-now-btn {
+  background-color: #0154AA;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 100;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.apply-now-btn:hover {
+  background-color: #2563eb;
+}
+
+.bookmark-btn {
+  background: none;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.bookmark-btn:hover {
+  background-color: #f1f5f9;
+  border-color: #d1d5db;
+}
+
+.bookmark-icon {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(150%);
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+.bookmark-btn:hover .bookmark-icon {
+  filter: grayscale(0%) brightness(100%);
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .job-card {
+    width: 182px;
+    height: 147px;
+    padding: 14px;
+    gap: 5px;
+  }
+  
+  .job-title {
+    font-size: 13px;
+  }
+  
+  .company-name {
+    font-size: 11px;
+  }
+  
+  .detail-item {
+    font-size: 10px;
+  }
+  
+  .detail-icon {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .apply-now-btn {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  
+  .bookmark-btn {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+  }
+  
+  .bookmark-icon {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-card {
+    width: 150px;
+    height:100%;
+    padding: 12px;
+    gap: 5px;
+  }
+  
+  .job-card-header {
+    gap: 6px;
+  }
+  
+  .company-logo {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .job-title {
+    font-size: 12px;
+  }
+  
+  .company-name {
+    font-size: 10px;
+  }
+  
+  .job-card-details {
+    gap: 2px;
+  }
+  
+  .detail-item {
+    font-size: 9px;
+  }
+  
+  .detail-icon {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .apply-now-btn {
+    padding: 4px 8px;
+    font-size: 9px;
+  }
+  
+  .bookmark-btn {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+  }
+  
+  .bookmark-icon {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-card {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    gap: 3px;
+  }
+  
+  .job-card-header {
+    gap: 4px;
+  }
+  
+  .company-logo {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .job-title {
+    font-size: 11px;
+  }
+  
+  .company-name {
+    font-size: 9px;
+  }
+  
+  .job-card-details {
+    gap: 2px;
+  }
+  
+  .detail-item {
+    font-size: 8px;
+  }
+  
+  .detail-icon {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .apply-now-btn {
+    padding: 10px 6px;
+    font-size: 8px;
+  }
+  
+  .bookmark-btn {
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+  }
+  
+  .bookmark-icon {
+    width: 6px;
+    height: 6px;
+  }
+}

@@ -1,0 +1,9 @@
+.layout {
+  min-height: 100vh;
+  background-color: #F6F9FF;
+}
+
+.layout-main-content {
+  margin-top: 70px; /* Account for fixed header */
+  min-height: calc(100vh - 70px);
+}

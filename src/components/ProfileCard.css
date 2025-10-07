@@ -1,0 +1,238 @@
+/* Profile Card Container */
+.profile-card-container {
+  width: 310px;
+  flex-shrink: 0;
+}
+
+/* Profile Card */
+.Card {
+  width: 310px;
+  height:227px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.Card-img {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-image: url("/src/assets/Rectangle 18369.png");
+  width: 100%;
+  height: 120px;
+  position: relative;
+ 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sub-card {
+  top: -70px;
+  position: relative;
+  gap: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sub-card h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1e293b;
+  margin: 0;
+}
+
+.sub-card p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #3c4654;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.sub-card .location {
+  margin-top: 3px;
+  font-size: 10px;
+  font-weight: 300;
+  color: #585D6E;
+}
+
+.subcard-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Stats Card */
+.stats-card {
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 9px 18px;
+  /* max-width: 346px; */
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.stats-row:last-child {
+  border-bottom: none;
+}
+
+.stats-label {
+  font-size: 13px;
+  font-weight: 300;
+  color: #333;
+}
+
+.stats-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0073e6;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .profile-card-container {
+    width: 228px;
+  }
+  
+  .Card {
+    width: 228px;
+    height: 240px;
+  }
+  
+  .sub-card h2 {
+    font-size: 14px;
+  }
+  
+  .sub-card p {
+    font-size: 11px;
+  }
+  
+  .location {
+    font-size: 11px;
+  }
+  .subcard-img{
+    width: 75px;
+    height: 75px;
+  }
+}
+
+
+.calendar-card {
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  padding:7px 10px;
+  /* max-width:  346px; */
+  
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+}
+
+.calendar-subtitle {
+  font-size: 14px;
+  color: #6b6f7b;
+}
+
+.calendar-icon {
+  font-size: 20px;
+  color: #333;
+  padding-right: 10px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .profile-card-container {
+    width: 100%;
+    max-width: unset;
+  }
+  
+  .Card {
+    width: 100%;
+    height: 220px;
+  }
+  
+  .sub-card h2 {
+    font-size: 18px;
+  }
+  
+  .sub-card p {
+    font-size: 14px;
+  }
+  
+  .location {
+    font-size: 13px;
+  }
+  
+  .stats-card {
+    margin-top: 20px;
+  }
+  
+  .stats-row {
+    padding: 12px 0;
+  }
+  
+  .stats-label {
+    font-size: 13px;
+  }
+  
+  .stats-value {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Card {
+    height: 215px;
+  }
+  
+  .sub-card h2 {
+    font-size: 16px;
+  }
+  
+  .sub-card p {
+    font-size: 13px;
+  }
+  
+  .location {
+    font-size: 12px;
+  }
+  
+  .stats-row {
+    padding: 10px 0;
+  }
+  
+  .stats-label {
+    font-size: 12px;
+  }
+  
+  .stats-value {
+    font-size: 15px;
+  }
+}
