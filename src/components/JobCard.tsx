@@ -1,8 +1,8 @@
 import React from 'react';
 import './JobCard.css';
-import locationIcon from '../assets/Vector (1).png';
-import timeIcon from '../assets/Vector.png';
-import bookmarkIcon from '../assets/Vector (2).png';
+import locationIcon from '../assets/Vector (1).webp';
+import timeIcon from '../assets/Vector.webp';
+import bookmarkIcon from '../assets/Vector (2).webp';
 
 interface JobCardProps {
   companyLogo: string;

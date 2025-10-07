@@ -2,8 +2,8 @@ import React from 'react';
 import ProfileCard from '../components/ProfileCard';
 import JobCard from '../components/JobCard';
 import './Home.css';
-import companyLogo from '../assets/Frame 1321315412.png';
-import searchIcon from '../assets/Group 1321315337w.png';
+import companyLogo from '../assets/Frame 1321315412.webp';
+import searchIcon from '../assets/Group 1321315337w.webp';
 
 const Home: React.FC = () => {
   const featuredJobs = [

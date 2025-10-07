@@ -1,8 +1,8 @@
 import React from 'react';
 import './ProfileCard.css';
 import { FaChevronDown } from 'react-icons/fa';
-import profileImage from '../assets/Oval.png';
-import cardBackgroundImage from '../assets/Rectangle 18369.png';
+import profileImage from '../assets/Oval.webp';
+import cardBackgroundImage from '../assets/Rectangle 18369.webp';
 
 const ProfileCard: React.FC = () => {
   const stats = [

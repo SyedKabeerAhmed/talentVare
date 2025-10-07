@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Menu.css';
-import logoImage from '../assets/Group 1907.png';
-import searchIcon from '../assets/Group 1321315337.png';
-import userAvatar from '../assets/Rectangle 1516.png';
+import logoImage from '../assets/Group 1907.webp';
+import searchIcon from '../assets/Group 1321315337.webp';
+import userAvatar from '../assets/Rectangle 1516.webp';
 
 const Menu: React.FC = () => {
   const location = useLocation();
