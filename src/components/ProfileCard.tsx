@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProfileCard.css';
 import { FaChevronDown } from 'react-icons/fa';
+import profileImage from '../assets/Oval.png';
 
 const ProfileCard: React.FC = () => {
   const stats = [
@@ -15,7 +16,7 @@ const ProfileCard: React.FC = () => {
         <div className='Card-img'></div>
         <div className='sub-card'>
           <img 
-            src="/src/assets/Oval.png" 
+            src={profileImage} 
             className='subcard-img' 
             alt="Albert Flores" 
             loading="lazy"

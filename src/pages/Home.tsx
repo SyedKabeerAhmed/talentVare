@@ -2,6 +2,8 @@ import React from 'react';
 import ProfileCard from '../components/ProfileCard';
 import JobCard from '../components/JobCard';
 import './Home.css';
+import companyLogo from '../assets/Frame 1321315412.png';
+import searchIcon from '../assets/Group 1321315337w.png';
 
 const Home: React.FC = () => {
   const featuredJobs = [
@@ -9,7 +11,7 @@ const Home: React.FC = () => {
 
       id: 1,
       
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'TalentVare',
       location: 'New York, USA',
@@ -18,7 +20,7 @@ const Home: React.FC = () => {
     },
     {
       id: 2,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Microsoft',
       location: 'Seattle, USA (Remote)',
@@ -27,7 +29,7 @@ const Home: React.FC = () => {
     },
     {
       id: 3,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Google',
       location: 'San Francisco, USA',
@@ -36,7 +38,7 @@ const Home: React.FC = () => {
     },
     {
       id: 4,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Amazon',
       location: 'Austin, USA',
@@ -45,7 +47,7 @@ const Home: React.FC = () => {
     },
     {
       id: 5,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Apple',
       location: 'Cupertino, USA',
@@ -57,7 +59,7 @@ const Home: React.FC = () => {
   const recommendedJobs = [
     {
       id: 6,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Meta',
       location: 'Menlo Park, USA',
@@ -66,7 +68,7 @@ const Home: React.FC = () => {
     },
     {
       id: 7,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Netflix',
       location: 'Los Gatos, USA',
@@ -75,7 +77,7 @@ const Home: React.FC = () => {
     },
     {
       id: 8,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Tesla',
       location: 'Palo Alto, USA',
@@ -84,7 +86,7 @@ const Home: React.FC = () => {
     },
     {
       id: 9,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Uber',
       location: 'San Francisco, USA',
@@ -93,7 +95,7 @@ const Home: React.FC = () => {
     },
     {
       id: 10,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Airbnb',
       location: 'San Francisco, USA',
@@ -102,7 +104,7 @@ const Home: React.FC = () => {
     },
     {
       id: 11,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Shopify',
       location: 'Ottawa, Canada',
@@ -111,7 +113,7 @@ const Home: React.FC = () => {
     },
     {
       id: 12,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Adobe',
       location: 'San Jose, USA',
@@ -120,7 +122,7 @@ const Home: React.FC = () => {
     },
     {
       id: 13,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Spotify',
       location: 'Stockholm, Sweden',
@@ -129,7 +131,7 @@ const Home: React.FC = () => {
     },
     {
       id: 14,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Slack',
       location: 'San Francisco, USA',
@@ -138,7 +140,7 @@ const Home: React.FC = () => {
     },
     {
       id: 15,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Salesforce',
       location: 'San Francisco, USA',
@@ -150,7 +152,7 @@ const Home: React.FC = () => {
   const latestJobs = [
     {
       id: 16,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Twitter',
       location: 'San Francisco, USA',
@@ -159,7 +161,7 @@ const Home: React.FC = () => {
     },
     {
       id: 17,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'LinkedIn',
       location: 'Sunnyvale, USA',
@@ -168,7 +170,7 @@ const Home: React.FC = () => {
     },
     {
       id: 18,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Pinterest',
       location: 'San Francisco, USA',
@@ -177,7 +179,7 @@ const Home: React.FC = () => {
     },
     {
       id: 19,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Snapchat',
       location: 'Santa Monica, USA',
@@ -186,7 +188,7 @@ const Home: React.FC = () => {
     },
     {
       id: 20,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'TikTok',
       location: 'Los Angeles, USA',
@@ -195,7 +197,7 @@ const Home: React.FC = () => {
     },
     {
       id: 21,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Discord',
       location: 'San Francisco, USA',
@@ -204,7 +206,7 @@ const Home: React.FC = () => {
     },
     {
       id: 22,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Zoom',
       location: 'San Jose, USA',
@@ -213,7 +215,7 @@ const Home: React.FC = () => {
     },
     {
       id: 23,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Dropbox',
       location: 'San Francisco, USA',
@@ -222,7 +224,7 @@ const Home: React.FC = () => {
     },
     {
       id: 24,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Square',
       location: 'San Francisco, USA',
@@ -231,7 +233,7 @@ const Home: React.FC = () => {
     },
     {
       id: 25,
-      companyLogo: '/src/assets/Frame 1321315412.png',
+      companyLogo: companyLogo,
       jobTitle: 'UI/UX Designer',
       companyName: 'Stripe',
       location: 'San Francisco, USA',
@@ -271,7 +273,7 @@ const Home: React.FC = () => {
                 <option>Job Type</option>
               </select>
               <button className="search-btn ">
-                <img src="/src/assets/Group 1321315337w.png" alt="Search" className="search-icon-btn" />
+                <img src={searchIcon} alt="Search" className="search-icon-btn" />
                 Search
               </button>
             </div>

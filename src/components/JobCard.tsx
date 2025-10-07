@@ -1,5 +1,8 @@
 import React from 'react';
 import './JobCard.css';
+import locationIcon from '../assets/Vector (1).png';
+import timeIcon from '../assets/Vector.png';
+import bookmarkIcon from '../assets/Vector (2).png';
 
 interface JobCardProps {
   companyLogo: string;
@@ -40,7 +43,7 @@ const JobCard: React.FC<JobCardProps> = ({
       <div className="job-card-details">
         <div className="detail-item">
           <img 
-            src="/src/assets/Vector (1).png" 
+            src={locationIcon} 
             alt="Location" 
             className="detail-icon" 
             loading="lazy"
@@ -50,7 +53,7 @@ const JobCard: React.FC<JobCardProps> = ({
         </div>
         <div className="detail-item">
           <img 
-            src="/src/assets/Vector.png" 
+            src={timeIcon} 
             alt="Time" 
             className="detail-icon" 
             loading="lazy"
@@ -64,7 +67,7 @@ const JobCard: React.FC<JobCardProps> = ({
         <button className="apply-now-btn">Apply Now</button>
         <button className="bookmark-btn">
           <img 
-            src="/src/assets/Vector (2).png" 
+            src={bookmarkIcon} 
             alt="Bookmark" 
             className="bookmark-icon" 
             loading="lazy"

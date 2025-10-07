@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Menu.css';
+import logoImage from '../assets/Group 1907.png';
+import searchIcon from '../assets/Group 1321315337.png';
+import userAvatar from '../assets/Rectangle 1516.png';
 
 const Menu: React.FC = () => {
   const location = useLocation();
@@ -29,7 +32,7 @@ const Menu: React.FC = () => {
       <div className="menu-container">
         <div className="left-section">
           <div className="logo-section">
-            <img src="/src/assets/Group 1907.png" alt="Logo" className="logo" />
+            <img src={logoImage} alt="Logo" className="logo" />
           </div>
           <nav className="nav-links">
             {menuItems.map((item) => (
@@ -46,12 +49,12 @@ const Menu: React.FC = () => {
 
         <div className="right-section">
           <div className="search-bar">
-            <img src="/src/assets/Group 1321315337.png" alt="Search" className="search-icon" />
+            <img src={searchIcon} alt="Search" className="search-icon" />
             <input type="text" placeholder="Search" className="search-input" />
           </div>
           <button className="resume-builder-btn">Resume Builder</button>
           <div className="user-profile">
-            <img src="/src/assets/Rectangle 1516.png" alt="User Avatar" className="user-avatar" />
+            <img src={userAvatar} alt="User Avatar" className="user-avatar" />
             <span className="dropdown-arrow">▼</span>
           </div>
         </div>
@@ -66,7 +69,7 @@ const Menu: React.FC = () => {
       <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
         <div className="mobile-menu-content">
           <div className="mobile-menu-header">
-            <img src="/src/assets/Group 1907.png" alt="Logo" className="mobile-logo" />
+            <img src={logoImage} alt="Logo" className="mobile-logo" />
             <button className="close-menu" onClick={closeMobileMenu}>×</button>
           </div>
           
@@ -85,14 +88,14 @@ const Menu: React.FC = () => {
 
           <div className="mobile-search-section">
             <div className="mobile-search-bar">
-              <img src="/src/assets/Group 1321315337.png" alt="Search" className="mobile-search-icon" />
+              <img src={searchIcon} alt="Search" className="mobile-search-icon" />
               <input type="text" placeholder="Search" className="mobile-search-input" />
             </div>
             <button className="mobile-resume-builder-btn">Resume Builder</button>
           </div>
 
           <div className="mobile-user-section">
-            <img src="/src/assets/Rectangle 1516.png" alt="User Avatar" className="mobile-user-avatar" />
+            <img src={userAvatar} alt="User Avatar" className="mobile-user-avatar" />
             <span className="mobile-user-name">Albert Flores</span>
           </div>
         </div>
